@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table th,
+table td {
+  border: 1px solid black;
+}
+
+table thead tr:first-child {
+  background-color: grey;
+  color: white;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: lightgrey;
+}
+

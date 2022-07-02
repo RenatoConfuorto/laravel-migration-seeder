@@ -1,1 +1,32 @@
-//
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+table{
+
+  th,
+  td{
+    border: 1px solid black;
+  }
+
+  thead{
+
+
+    tr:first-child{
+      background-color: grey; 
+      color: white;
+    }
+  }
+
+  tbody{
+
+    tr:nth-child(even){
+      background-color: lightgrey;
+    }
+  }
+
+
+}
