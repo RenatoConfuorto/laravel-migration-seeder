@@ -4,12 +4,43 @@
   box-sizing: border-box;
 }
 
+body{
+  padding: 20px;
+}
+
+a{
+  color: inherit;
+}
+
+ul{
+  list-style: none;
+  margin-bottom: 20px;
+
+  display: flex;
+
+  li{
+    margin: 0 10px;
+    color: black;
+    
+    a{
+      text-decoration: none;
+    }
+  }
+}
+
+h1{
+  margin-bottom: 15px;
+}
 
 table{
+  margin: 0 auto;
+  text-transform: capitalize;
+  border-collapse: collapse;
 
   th,
   td{
     border: 1px solid black;
+    padding: 0.2rem 0.4rem;
   }
 
   thead{

@@ -18,6 +18,7 @@ class TrainsSeeder extends Seeder
             $train->azienda = $faker->word();
             $train->stazione_di_partenza = $faker->city();
             $train->stazione_di_arrivo = $faker->city();
+            $train->data_di_partenza = $faker->dateTimeBetween('today', '+1 week');
             $train->orario_di_partenza = $faker->time('H:i');
             $train->orario_di_arrivo = $faker->time('H:i');
             $train->codice_treno = $faker->unique()->randomNumber(9, true);
