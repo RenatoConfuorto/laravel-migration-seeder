@@ -21,10 +21,10 @@ class TrainsSeeder extends Seeder
             $train->orario_di_partenza = $faker->time('H:i');
             $train->orario_di_arrivo = $faker->time('H:i');
             $train->codice_treno = $faker->unique()->randomNumber(9, true);
-            $train->numero_carrozze = $faker->randomNumber(2, false);
+            $train->numero_carrozze = $faker->numberBetween(5, 25);
             $train->in_orario = $faker->boolean();
             $train->cancellato = $faker->boolean();
-            
+
             $train->save();
         }
 
